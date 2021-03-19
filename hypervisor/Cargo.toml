@@ -16,7 +16,7 @@ epoll = ">=4.0.1"
 thiserror = "1.0"
 libc = "0.2.89"
 log = "0.4.14"
-kvm-ioctls = {  version = "0.8.0", optional = true }
+kvm-ioctls = { git = "https://github.com/wan-nyan-wan/kvm-ioctls", branch = "for-vhost-user-vsock", optional = true }
 kvm-bindings = { git = "https://github.com/cloud-hypervisor/kvm-bindings", branch = "ch-v0.4.0", features = ["with-serde", "fam-wrappers"], optional  = true }
 mshv-bindings = {git = "https://github.com/cloud-hypervisor/mshv", branch = "master", features = ["with-serde", "fam-wrappers"], optional  = true }
 mshv-ioctls = { git = "https://github.com/cloud-hypervisor/mshv", branch = "master", optional  = true}

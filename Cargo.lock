@@ -1208,6 +1208,16 @@ dependencies = [
 [[package]]
 name = "vhost"
 version = "0.1.0"
+source = "git+https://github.com/cloud-hypervisor/vhost?branch=dragonball#422964150a69afd4611708076c60cb34c64a9856"
+dependencies = [
+ "bitflags 1.2.1",
+ "libc",
+ "vmm-sys-util",
+]
+
+[[package]]
+name = "vhost"
+version = "0.1.0"
 source = "git+https://github.com/rust-vmm/vhost?branch=master#ee3e8722706c984b3dfe12d3a130e92101b78e8f"
 dependencies = [
  "bitflags 1.2.1",
@@ -1222,7 +1232,7 @@ dependencies = [
  "epoll",
  "libc",
  "log 0.4.14",
- "vhost",
+ "vhost 0.1.0 (git+https://github.com/cloud-hypervisor/vhost?branch=dragonball)",
  "virtio-bindings",
  "vm-memory",
  "vm-virtio",
@@ -1240,7 +1250,7 @@ dependencies = [
  "log 0.4.14",
  "option_parser",
  "qcow",
- "vhost",
+ "vhost 0.1.0 (git+https://github.com/rust-vmm/vhost)",
  "vhost_user_backend",
  "virtio-bindings",
  "vm-memory",
@@ -1257,7 +1267,7 @@ dependencies = [
  "log 0.4.14",
  "net_util",
  "option_parser",
- "vhost",
+ "vhost 0.1.0 (git+https://github.com/rust-vmm/vhost)",
  "vhost_user_backend",
  "virtio-bindings",
  "vm-memory",
@@ -1290,7 +1300,7 @@ dependencies = [
  "serde",
  "serde_derive",
  "serde_json",
- "vhost",
+ "vhost 0.1.0 (git+https://github.com/rust-vmm/vhost)",
  "virtio-bindings",
  "vm-allocator",
  "vm-device",
